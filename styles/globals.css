@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+.logoHeight {
+  height: 6rem;
+}
+
+.logoContainer {
+  height: 110px;
+}
+
+.logoText {
+  object-fit: cover;
+}
+
+.nav-buttons > a {
+  /* @apply transition border-b-2 border-transparent;  */
+}
+
+.nav-buttons > a:hover {
+  /* @apply border-black;  */
+  /* On hover, just change the border color */
+}
+
+.btn-hover-border {
+}
+
+.nav-buttons > a {
+  @apply relative overflow-hidden text-left py-2 pr-1.5; /* Set position context and hide overflowing children */
+}
+
+.nav-buttons > a::before {
+  @apply bg-yellow-600;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Start from the far left, consistently */
+  height: 2px;
+  width: 0%; /* Initially, the width is zero so the border is hidden */
+  transition: width 0.3s ease; /* The slide-out effect is achieved by transitioning the width */
+}
+
+.nav-buttons > a:hover::before {
+  width: 100%; /* On hover, expand the border to full width */
+}
+
+.services > li {
+  @apply m-4;
+}
+
+.list-buttons {
+  @apply relative overflow-hidden text-left py-2 pr-1.5; /* Set position context and hide overflowing children */
+  cursor: pointer;
+}
+
+.list-buttons::before {
+  @apply bg-yellow-300;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Start from the far left, consistently */
+  height: 2px;
+  width: 0%; /* Initially, the width is zero so the border is hidden */
+  transition: width 0.3s ease; /* The slide-out effect is achieved by transitioning the width */
+}
+
+.list-buttons:hover::before {
+  width: 100%; /* On hover, expand the border to full width */
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
