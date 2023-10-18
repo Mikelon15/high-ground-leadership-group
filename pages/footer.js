@@ -52,9 +52,9 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row justify-evenly p-4 md:px-2 md:px-12">
                 <div className="md:block pb-12 md:pb-0 md:pt-0 md:p-2 md:p-8 md:pt-0">
                     <div className="uppercase text-xl mb-4 text-yellow-300">Read More About Us</div>
-                    <div className="py-1"><span className="list-buttons"><a href="/about.html">Learn more about us</a></span> <span aria-hidden="true" className="text-yellow-400 text-lg">&rarr;</span> </div>
-                    <div className="py-1"><span className="list-buttons"><Link href="/about.html#services">See what services we offer</Link></span> <span aria-hidden="true" className="text-yellow-400 text-lg">&rarr;</span> </div>
-                    <div className="py-1"><span className="list-buttons"><a href="/news.html">See news about our leadership</a></span> <span aria-hidden="true" className="text-yellow-400 text-lg">&rarr;</span> </div>
+                    <div className="py-1"><span className="list-buttons"><a href="/about">Learn more about us</a></span> <span aria-hidden="true" className="text-yellow-400 text-lg">&rarr;</span> </div>
+                    <div className="py-1"><span className="list-buttons"><Link href="/about#services">See what services we offer</Link></span> <span aria-hidden="true" className="text-yellow-400 text-lg">&rarr;</span> </div>
+                    <div className="py-1"><span className="list-buttons"><a href="/news">See news about our leadership</a></span> <span aria-hidden="true" className="text-yellow-400 text-lg">&rarr;</span> </div>
                     <br></br>
                     <img className="h-72 mt-4" src="../short_color_logo.webp" alt="High Ground Leadership Group text logo" />
                 </div>
