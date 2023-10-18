@@ -6,14 +6,14 @@ function About() {
   return (
     <div>
       <Head>
-        <title>High Ground Leadershi Group</title>
-        <meta name="description" content="Description of my page" />
+        <title>High Ground Leadership Group</title>
+        <meta name="description" content="High Ground Leadership Group about page" />
       </Head>
       <Header />
       <div className="mx-auto max-w-3xl py-12 px-6 mt-8">
         <div className="text-center">
           <div className="text-black text-3xl w-full pb-12 pt-24 text-center b-black uppercase">High Ground Leadership Group President</div>
-          <p className="mt-2 text-sm text-left md:text-lg leading-8 text-gray-600">
+          <p className="mt-2 text-m text-left text-gray-600">
             Dr. Chad Gestson serves as the founding Executive Director of the Arizona Institute for
             Education and the Economy, a collective impact group with a mission of cultivating
             solutions that drive educational and economic equity and prosperity in Arizona. He also
@@ -73,18 +73,37 @@ function About() {
             and college scholars on their journey to and through college. They have two children,
             Olivia and Andrew, ages 19 and 16, respectively, and reside in Phoenix.
           </p>
-          <div className="text-black text-3xl w-full pb-12 pt-48 text-center b-black uppercase">High Ground Leadership Group Services</div>
-          <p className="mt-2 mb-48 text-sm text-left md:text-lg leading-8 text-gray-600">
-            Customized keynote addresses on leadership, values, continuous improvement, and
-            other customized topics upon request.
-            Customized CEO, superintendent, principal, and leadership trainings for individuals,
-            teams, and large groups on leadership, values, and continuous improvement.
-            Trainings on the BEFORE Teaching and Learning framework, a framework that Dr.
-            Gestson outlines in his book, BEFORE Teaching and Learning: A Principal’s Playbook
-            for Year One and Beyond. Copies of his book can be purchased on www.Amazon.com.
-            Individual and team coaching for school, systems, and business leaders.
-            Support with strategy, planning, communications, and advocacy.
-          </p>
+          <h2 id="services" className="text-black text-3xl w-full pb-12 pt-48 text-center b-black uppercase">High Ground Leadership Group Services</h2>
+          <ul className="mt-2 mb-32 text-left text-gray-600">
+              <li className='mb-6 pb-2 text-m'>
+                <div>Customized keynote addresses on leadership, values, continuous improvement, and
+                  other customized topics upon request.
+                </div>
+              </li>
+              <li className='my-6 py-2 text-m'>
+                <div>
+                  Customized CEO, superintendent, principal, and leadership trainings for individuals,
+                  teams, and large groups on leadership, values, and continuous improvement.
+                </div>
+              </li>
+              <li className='my-6 py-2 text-m'>
+                <div>
+                  Trainings on the BEFORE Teaching and Learning framework, a framework that Dr.
+                  Gestson outlines in his book, <i>BEFORE Teaching and Learning: A Principal’s Playbook
+                  for Year One and Beyond</i>. Copies of his book can be purchased on <b><a className='font-semibold text-yellow-600 hover:text-yellow-700' href='https://www.amazon.com/BEFORE-Teaching-Learning-Principals-Playbook/dp/1090347820'>Amazon.com</a></b>.
+                </div>
+              </li>
+              <li className='my-6 py-2 text-m'>
+                <div>
+                  Individual and team coaching for school, systems, and business leaders.
+                </div>
+              </li>
+              <li className='my-6 py-2 text-m'>
+                <div>
+                  Support with strategy, planning, communications, and advocacy.
+                </div>
+              </li>
+            </ul>
         </div>
       </div>
       <Footer />

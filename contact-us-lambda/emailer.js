@@ -129,6 +129,7 @@ exports.handler = async (event) => {
 
         const d = new Date();
         const date = `${[d.getMonth()+1, d.getDate(), d.getFullYear()].join('/')}`
+        const time = `${[d.getHours() > 12 ? d.getHours() % 12 : d.getHours(), d.getMinutes() < 10 ? `0${d.getMinutes()}`: d.getMinutes()].join(':')} ${d.getHours() > 12 ? 'PM' : 'AM'}`;
     
         const emailBody = createEmailBody(fileContents)
         const params = {
@@ -140,7 +141,7 @@ exports.handler = async (event) => {
                     Charset: 'UTF-8',
                     Data: emailBody 
                 } },
-                Subject: { Data: `You have new messages! High Ground Leadership ${date}` }
+                Subject: { Data: `You have new messages! High Ground Leadership ${date} ${time}` }
             }
         };
 

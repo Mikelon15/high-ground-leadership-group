@@ -40,11 +40,11 @@ function News() {
     <div>
       <Head>
         <title>High Ground Leadership Group</title>
-        <meta name="description" content="Description of my page" />
+        <meta name="description" content="High Ground Leadership Group news" />
       </Head>
       <Header />
       <div className="container mx-auto p-2 mt-8">
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-2 pt-24 pb-48 px-2 md:px-4">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-2 pt-24 pb-48 px-0 md:px-4">
           {newsItems.map((item, index) => (
             <NewsCard key={index} {...item} />
           ))}
